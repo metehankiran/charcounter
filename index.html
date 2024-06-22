@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character, Space, Word Counter</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 min-h-screen p-8">
+    <div class="max-w-full mx-auto bg-white bg-slate-200 p-6 rounded shadow-md">
+        <h1 class="text-3xl font-bold mb-2 text-center">Text Analyzer Tool</h1>
+        <p class="text-gray-600 text-center mb-6">Quickly analyze your text for character, space, word, and paragraph counts.</p>
+        <h2 class="text-2xl font-bold mb-4">Enter your text below:</h2>
+        <textarea id="inputText" class="w-full h-48 border-2 border-blue-500 rounded-lg p-4 mb-4 bg-gray-50 focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-700"></textarea>
+        <div class="flex justify-end">
+            <button id="resetButton" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700
+        dark:focus:ring-blue-800">Reset</button>
+        </div>
+        <div id="result" class="mt-4 grid grid-cols-2 gap-4">
+            <div class="bg-blue-100 p-4 rounded shadow-md text-center">
+                <p class="text-lg font-semibold">Characters</p>
+                <p id="charCount" class="text-2xl font-bold text-blue-600">0</p>
+            </div>
+            <div class="bg-blue-100 p-4 rounded shadow-md text-center">
+                <p class="text-lg font-semibold">Spaces</p>
+                <p id="spaceCount" class="text-2xl font-bold text-blue-600">0</p>
+            </div>
+            <div class="bg-blue-100 p-4 rounded shadow-md text-center">
+                <p class="text-lg font-semibold">Words</p>
+                <p id="wordCount" class="text-2xl font-bold text-blue-600">0</p>
+            </div>
+            <div class="bg-blue-100 p-4 rounded shadow-md text-center">
+                <p class="text-lg font-semibold">Paragraphs</p>
+                <p id="paragraphCount" class="text-2xl font-bold text-blue-600">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
